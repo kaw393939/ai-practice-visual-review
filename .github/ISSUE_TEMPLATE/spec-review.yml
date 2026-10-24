@@ -1,0 +1,18 @@
+name: Specification review
+description: Discuss a specification, open question, or proposed revision.
+title: "[Spec review] "
+body:
+  - type: input
+    id: specification
+    attributes:
+      label: Specification
+      description: Link to the page or document being reviewed.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback or decision needed
+      description: Describe the requirement, question, or change and its rationale.
+    validations:
+      required: true

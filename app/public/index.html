@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal link library</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">PERSONAL LINK LIBRARY</span><h1>Keep something useful.</h1><p>Save a link and a note so you can come back to it.</p></header>
+    <form id="save-form" novalidate>
+      <label for="url">Link</label>
+      <input id="url" name="url" type="url" placeholder="https://example.com/article" maxlength="2048" required autocomplete="url" aria-describedby="url-help">
+      <small id="url-help">A complete web address starting with http:// or https://.</small>
+      <label for="note">Note <span>(optional)</span></label>
+      <textarea id="note" name="note" placeholder="Why do you want to keep this?" maxlength="4000" rows="3"></textarea>
+      <button type="submit" id="save-button">Save link</button>
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+    <section id="saved-entry" hidden aria-labelledby="saved-heading">
+      <div class="entry-top"><h2 id="saved-heading">Saved link</h2><span class="badge">Saved</span></div>
+      <a id="saved-url" target="_blank" rel="noopener noreferrer"></a>
+      <p id="saved-note"></p>
+      <small id="saved-date"></small>
+      <p class="pending">Your link is saved. Automatic summaries are coming in a later feature.</p>
+      <a id="entry-link">Direct link to this entry</a>
+    </section>
+    <footer>One place for the things you want to revisit.</footer>
+  </main>
+</body>
+</html>

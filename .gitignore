@@ -1,0 +1,14 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local application data
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

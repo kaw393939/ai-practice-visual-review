@@ -1,0 +1,11 @@
+name: Small feature or change
+description: Record a short plan agreed with AI.
+title: "[FEATURE-ID] "
+body:
+  - type: textarea
+    id: plan
+    attributes:
+      label: Plan and checks
+      description: Paste your reviewed draft. Include the feature ID, spec link, scope, and examples with expected results.
+    validations:
+      required: true
