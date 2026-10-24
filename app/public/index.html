@@ -15,7 +15,8 @@
       <input id="url" name="url" type="url" placeholder="https://example.com/article" maxlength="2048" required autocomplete="url" aria-describedby="url-help">
       <small id="url-help">A complete web address starting with http:// or https://.</small>
       <label for="note">Note <span>(optional)</span></label>
-      <textarea id="note" name="note" placeholder="Why do you want to keep this?" maxlength="4000" rows="3"></textarea>
+      <textarea id="note" name="note" placeholder="Why do you want to keep this?" maxlength="4000" rows="3" aria-describedby="note-help"></textarea>
+      <small id="note-help">Add a short note (up to 4,000 characters).</small>
       <button type="submit" id="save-button">Save link</button>
       <p id="message" role="status" aria-live="polite"></p>
     </form>
